@@ -3,7 +3,7 @@ import styles from "./todo.module.css";
 function Todo(props) {
   return props.todos.map((item, index) => {
     return (
-      <div className={item.bl ? styles.todo1 : styles.todo}>
+      <div key={index} className={item.bl ? styles.todo1 : styles.todo}>
         <button
           className={styles.favourite}
           onClick={() => props.setFav(index)}

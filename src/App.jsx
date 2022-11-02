@@ -24,7 +24,6 @@ function App() {
       ...todos,
     ]);
     setText("");
-    console.log(todos);
   }
 
   const [text, setText] = useState("");
